@@ -43,6 +43,8 @@ Ensure the CSV file is placed in a known directory. For example, C:\Users\YourUs
 
 **Step 4**: Run the Setup Script
 
+**IMPORTANT**: You must be VPN'ed in to Prod fin order to download images.
+
 Windows Users
 Open PowerShell and navigate to the project directory:
 
