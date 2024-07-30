@@ -37,7 +37,7 @@ def generate_api_endpoints(df):
         df = df[df['file_source_id'].notna()]
 
         # Generate the 'api_endpoint' column
-        df['api_endpoint'] = df.apply(lambda row: f"https://intelligence-platform-api.app.janus-ai.com/private-api/observe/v1/{row['org_id']}/file/{row['file_source_id']}?fileName={row['path']}", axis=1)
+        df['api_endpoint'] = df.apply(lambda row: f"https://intelligence-platform-api-internal.app.janus-ai.com/private-api/observe/v1/{row['org_id']}/file/{row['file_source_id']}?fileName={row['path']}", axis=1)
 
         # Print a preview of the data
         print("Data preview with API endpoints:")
