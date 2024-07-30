@@ -46,11 +46,13 @@ Ensure the CSV file is placed in a known directory. For example, C:\Users\YourUs
 **IMPORTANT**: You must be VPN'ed in to Prod fin order to download images.
 
 Windows Users
-Open PowerShell and navigate to the project directory:
+Open PowerShell using **Run as Administrator** and navigate to the project directory:
 
 powershell
 
 cd C:\path\to\observe_image_pull (update this to the folder where you stored the repository)
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 Run the setup script:
 
